@@ -10,6 +10,7 @@ import {BrowserRouter as Router,
 
 import loginPage from "./pages/loginPage";
 import registrationPage from './pages/registrationPage';
+import LedgerDashboard from './pages/LedgerDashboard';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
     <Router>
       navbar
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<LedgerDashboard/>} />
         <Route path="/register" element={<registrationPage/>} />
         <Route path="/login" element={loginPage}/>
       </Routes>
